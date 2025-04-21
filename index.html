@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create and visualize your perfect outfit with our interactive outfit builder. Drag and drop clothing items to create unique combinations.">
+    <meta name="keywords" content="outfit builder, fashion, clothing, style, dress up, virtual wardrobe">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="Outfit Builder - Create Your Perfect Look">
+    <meta property="og:description" content="Interactive outfit builder to create and visualize your perfect look">
+    <meta property="og:image" content="https://[YOUR_USERNAME].github.io/outfit-builder/preview.png">
+    <meta property="og:url" content="https://[YOUR_USERNAME].github.io/outfit-builder">
+    <title>Outfit Builder - Create Your Perfect Look</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="root">
+        <header>
+            <h1>Outfit Builder</h1>
+        </header>
+        <main>
+            <div class="container">
+                <div class="clothing-items">
+                    <div class="item" draggable="true" data-type="tshirt">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M16 2l4 4v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6l4-4h8z'/%3E%3C/svg%3E" alt="T-Shirt">
+                    </div>
+                    <div class="item" draggable="true" data-type="pants">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M6 2L4 20h4l2-14l2 14h4L14 2H6z'/%3E%3C/svg%3E" alt="Pants">
+                    </div>
+                    <div class="item" draggable="true" data-type="shirt">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z'/%3E%3C/svg%3E" alt="Shirt">
+                    </div>
+                    <div class="item" draggable="true" data-type="dress">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 2L8 6v14h8V6l-4-4z'/%3E%3C/svg%3E" alt="Ladies Dress">
+                    </div>
+                    <div class="item" draggable="true" data-type="cap">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z'/%3E%3C/svg%3E" alt="Cap">
+                    </div>
+                </div>
+                <div class="canvas-area" id="canvas">
+                    <h2>CANVAS AREA</h2>
+                </div>
+            </div>
+            <div class="actions">
+                <button id="reset">Reset</button>
+                <button id="save">Save Outfit</button>
+                <button id="addToCart">Add to Cart 🛒</button>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 
